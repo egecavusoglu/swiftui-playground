@@ -16,12 +16,15 @@ struct TodoItem: View {
     }
     
     var body: some View {
-        Text(todo.text).swipeActions{
+        Text(todo.text)
+            .swipeActions{
             Button("Delete") {
                 removeSelf()
             }
             .tint(.red)
-        }.padding()
+        }
+        .padding()
+        .background(Color(UIColor.secondarySystemGroupedBackground))
         
     }
 }

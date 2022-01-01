@@ -19,8 +19,7 @@ struct TodoList:  View {
             ForEach(todos , id: \.id){ item in
                 TodoItem(todo: item, removeFromList: removeFromList)
             }
-        }.background(.white)
-    }
+        }    }
 }
 
 
