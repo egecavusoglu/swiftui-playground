@@ -24,21 +24,4 @@ struct TodoList:  View {
 }
 
 
-struct TodoItem: View {
-    var todo: Todo
-    var removeFromList: (_ id:Int) -> Void
-    
-    func removeSelf() {
-        removeFromList(self.todo.id)
-    }
-    
-    var body: some View {
-        Text(todo.text).swipeActions{
-            Button("Delete") {
-                removeSelf()
-            }
-            .tint(.red)
-        }
-        
-    }
-}
+
