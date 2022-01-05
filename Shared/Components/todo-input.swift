@@ -19,7 +19,7 @@ struct TodoInput: View {
     
     var body: some View {
         HStack {
-        TextField("New todo", text: $inputText)
+            TextField("New todo", text: $inputText)
             Button(action: addTodo){
                 Image(systemName: "plus")
             }
