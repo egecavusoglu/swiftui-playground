@@ -18,14 +18,13 @@ struct TodoItem: View {
     var body: some View {
         NavigationLink(destination: todo_details(item: todo)) {
             Text(todo.text)
-                .swipeActions{
-                    Button("Delete") {
-                        removeSelf()
-                    }
-                    .tint(.red)
-                }
-                .padding(.horizontal)
-//                .background(Color(UIColor.secondarySystemGroupedBackground))
+                .padding()
+        }
+        .swipeActions{
+            Button("Delete") {
+                removeSelf()
+            }
+            .tint(.red)
         }
     }
 }

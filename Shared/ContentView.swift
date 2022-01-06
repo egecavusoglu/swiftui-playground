@@ -22,17 +22,19 @@ struct ContentView: View {
     }
     
     var body: some View {
-        Title()
-        Form {
-            TodoInput(addNewTodo: addNewTodo, inputText: $inputText)
-            TodoList(todos: $todos)
+        NavigationView{
+            Form {
+                TodoInput(addNewTodo: addNewTodo, inputText: $inputText)
+                TodoList(todos: $todos)
+            }
+            .navigationTitle("Todoozy")
         }
-        
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .previewDevice("iPhone 13 mini")
     }
 }
