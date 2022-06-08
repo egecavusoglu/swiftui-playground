@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct todo_appApp: App {
+struct PlaygroundApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AppContainerView()
         }
     }
 }

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct TodoContainerView: View {
     @State var todos: [Todo] = INITIAL_TODOS;
     @State var counter = 0
     @State var inputText = ""
@@ -22,17 +22,17 @@ struct ContentView: View {
     }
     
     var body: some View {
-        Title()
         Form {
             TodoInput(addNewTodo: addNewTodo, inputText: $inputText)
             TodoList(todos: $todos)
         }
+        .navigationTitle("Todo App")
         
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct TodoContainerView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        TodoContainerView()
     }
 }

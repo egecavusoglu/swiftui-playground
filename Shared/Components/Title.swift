@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct Title:  View {
+    var text: String
+    
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
-                Text("Todo List").font(.title).fontWeight(.bold)
+                Text(text).font(.title).fontWeight(.bold)
                 Spacer()
             }.padding()
         }
