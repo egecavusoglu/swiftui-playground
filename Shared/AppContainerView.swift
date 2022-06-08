@@ -14,7 +14,7 @@ struct AppContainerView: View {
                 Text("This is a playground where I get to test some SwitfUI concepts and acts as a cheat sheet.").padding()
                 List {
                     ListItem(text: "Todo App", screen: AnyView(TodoContainerView()))
-                    ListItem(text: "Cards", screen: AnyView(Text("Empty Lol")))
+                    ListItem(text: "Swipe Cards", screen: AnyView(SwipeCardsContainer()))
                 }
             }
             .navigationTitle(Text("Ege's Playground"))
