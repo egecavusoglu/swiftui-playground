@@ -19,24 +19,20 @@ struct SwipeCardsContainer: View {
     
     
     var body: some View {
-        ZStack{
-            Button {
-                cards = INITIAL_PEOPLE
-            } label: {
-                Text("Get More Cards")
-            }
-            
+        ZStack(alignment: .center){
             ForEach(cards.reversed(), id: \.id) { person in
                 let index = cards.firstIndex(where: { p in
                     p.id == person.id
                 })!
                 let yOffset = index > 3 ? 0 :CGFloat(index * -10)
+                
                 Card(person: person, removeSelf: removeItem)
                     .offset(x: 0, y: yOffset)
                 
             }
         }
         .navigationTitle(Text("Swipe Cards"))
+        
     }
 }
 
