@@ -11,7 +11,7 @@ struct Card: View {
     @State private var offset = CGSize.zero
     var person: Person
     var removeSelf: (Int) -> Void
-    
+    var bgColor: Color = .random
     var dislikeOpacity: CGFloat {
         if (offset.width < 0){
             return -offset.width / 100
@@ -50,14 +50,12 @@ struct Card: View {
                     .font(.headline)
                 Spacer()
             }
-            //            .border(.gray, width: 1)
         }
         
         .padding()
         .frame(width: UIScreen.main.bounds.width - 40, height: 600, alignment: .center)
         .background(LinearGradient(colors: [.clear, Color(red: 0.1, green: 0.1, blue: 0.1, opacity: 1)], startPoint: .top, endPoint: .bottom))
-        .background(.cyan)
-        
+        .background(bgColor)
         .cornerRadius(15, antialiased: true)
         .shadow(color: Color(red: 0.3, green: 0.3, blue:0.3, opacity: 0.4), radius: 20, x: 0, y: 0)
         .offset(x: offset.width * 2, y: 0)
@@ -111,3 +109,4 @@ enum Decision {
     case like
     case dislike
 }
+

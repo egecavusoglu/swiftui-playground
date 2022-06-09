@@ -29,6 +29,8 @@
 		82849CEA28502A210004A347 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82849CE828502A210004A347 /* Card.swift */; };
 		82BEE01F2851ADEE00DB3DD0 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BEE01E2851ADEE00DB3DD0 /* Person.swift */; };
 		82BEE0202851ADEE00DB3DD0 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BEE01E2851ADEE00DB3DD0 /* Person.swift */; };
+		82BEE0232851C0B500DB3DD0 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BEE0222851C0B500DB3DD0 /* Color.swift */; };
+		82BEE0242851C0B500DB3DD0 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BEE0222851C0B500DB3DD0 /* Color.swift */; };
 		82C7030327804B2600CCA8EB /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C7030227804B2600CCA8EB /* Tests_iOS.swift */; };
 		82C7030527804B2600CCA8EB /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C7030427804B2600CCA8EB /* Tests_iOSLaunchTests.swift */; };
 		82C7030F27804B2600CCA8EB /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C7030E27804B2600CCA8EB /* Tests_macOS.swift */; };
@@ -68,6 +70,7 @@
 		82849CE5285028910004A347 /* SwipeCardsContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeCardsContainer.swift; sourceTree = "<group>"; };
 		82849CE828502A210004A347 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		82BEE01E2851ADEE00DB3DD0 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		82BEE0222851C0B500DB3DD0 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		82C702EA27804B2400CCA8EB /* PlaygroundApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundApp.swift; sourceTree = "<group>"; };
 		82C702EC27804B2500CCA8EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82C702F127804B2600CCA8EB /* todo-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "todo-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,6 +147,14 @@
 			path = SwipeCards;
 			sourceTree = "<group>";
 		};
+		82BEE0212851C0AD00DB3DD0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				82BEE0222851C0B500DB3DD0 /* Color.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		82C702E427804B2400CCA8EB = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +169,7 @@
 		82C702E927804B2400CCA8EB /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				82BEE0212851C0AD00DB3DD0 /* Utils */,
 				82849CE4285028780004A347 /* SwipeCards */,
 				82849CDF284FFE930004A347 /* Components */,
 				8242798C2780C5A600D03083 /* Todo */,
@@ -367,6 +379,7 @@
 				82849CDD284FFE290004A347 /* AppContainerView.swift in Sources */,
 				8242798A2780C53900D03083 /* TodoItem.swift in Sources */,
 				82554DD42780820300634ECF /* TodoInput.swift in Sources */,
+				82BEE0232851C0B500DB3DD0 /* Color.swift in Sources */,
 				82849CE1284FFFFD0004A347 /* ListItem.swift in Sources */,
 				82554DCB278077E200634ECF /* Title.swift in Sources */,
 				82BEE01F2851ADEE00DB3DD0 /* Person.swift in Sources */,
@@ -386,6 +399,7 @@
 				82849CDE284FFE290004A347 /* AppContainerView.swift in Sources */,
 				8242798B2780C53900D03083 /* TodoItem.swift in Sources */,
 				82554DD52780820300634ECF /* TodoInput.swift in Sources */,
+				82BEE0242851C0B500DB3DD0 /* Color.swift in Sources */,
 				82849CE2284FFFFD0004A347 /* ListItem.swift in Sources */,
 				82554DCC278077E200634ECF /* Title.swift in Sources */,
 				82BEE0202851ADEE00DB3DD0 /* Person.swift in Sources */,
