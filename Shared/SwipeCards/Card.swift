@@ -90,7 +90,7 @@ struct DecisionLabel:  View {
         return decision == .like ? Color.green : Color.red
     }
     var text : String {
-        return decision == .like ? "Yay" : "Nah"
+        return decision == .like ? "LIKED" : "NOT LIKED"
     }
     
     var body: some View {
