@@ -73,8 +73,8 @@
 		82BEE0222851C0B500DB3DD0 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		82C702EA27804B2400CCA8EB /* PlaygroundApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundApp.swift; sourceTree = "<group>"; };
 		82C702EC27804B2500CCA8EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		82C702F127804B2600CCA8EB /* todo-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "todo-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		82C702F727804B2600CCA8EB /* todo-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "todo-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		82C702F127804B2600CCA8EB /* Ege's Playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ege's Playground.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		82C702F727804B2600CCA8EB /* Ege's Playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ege's Playground.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		82C702F927804B2600CCA8EB /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		82C702FE27804B2600CCA8EB /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		82C7030227804B2600CCA8EB /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
@@ -183,8 +183,8 @@
 		82C702F227804B2600CCA8EB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				82C702F127804B2600CCA8EB /* todo-app.app */,
-				82C702F727804B2600CCA8EB /* todo-app.app */,
+				82C702F127804B2600CCA8EB /* Ege's Playground.app */,
+				82C702F727804B2600CCA8EB /* Ege's Playground.app */,
 				82C702FE27804B2600CCA8EB /* Tests iOS.xctest */,
 				82C7030A27804B2600CCA8EB /* Tests macOS.xctest */,
 			);
@@ -220,9 +220,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		82C702F027804B2600CCA8EB /* todo-app (iOS) */ = {
+		82C702F027804B2600CCA8EB /* Ege's Playground (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 82C7031A27804B2600CCA8EB /* Build configuration list for PBXNativeTarget "todo-app (iOS)" */;
+			buildConfigurationList = 82C7031A27804B2600CCA8EB /* Build configuration list for PBXNativeTarget "Ege's Playground (iOS)" */;
 			buildPhases = (
 				82C702ED27804B2600CCA8EB /* Sources */,
 				82C702EE27804B2600CCA8EB /* Frameworks */,
@@ -232,14 +232,14 @@
 			);
 			dependencies = (
 			);
-			name = "todo-app (iOS)";
+			name = "Ege's Playground (iOS)";
 			productName = "todo-app (iOS)";
-			productReference = 82C702F127804B2600CCA8EB /* todo-app.app */;
+			productReference = 82C702F127804B2600CCA8EB /* Ege's Playground.app */;
 			productType = "com.apple.product-type.application";
 		};
-		82C702F627804B2600CCA8EB /* todo-app (macOS) */ = {
+		82C702F627804B2600CCA8EB /* Ege's Playground (macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 82C7031D27804B2600CCA8EB /* Build configuration list for PBXNativeTarget "todo-app (macOS)" */;
+			buildConfigurationList = 82C7031D27804B2600CCA8EB /* Build configuration list for PBXNativeTarget "Ege's Playground (macOS)" */;
 			buildPhases = (
 				82C702F327804B2600CCA8EB /* Sources */,
 				82C702F427804B2600CCA8EB /* Frameworks */,
@@ -249,9 +249,9 @@
 			);
 			dependencies = (
 			);
-			name = "todo-app (macOS)";
+			name = "Ege's Playground (macOS)";
 			productName = "todo-app (macOS)";
-			productReference = 82C702F727804B2600CCA8EB /* todo-app.app */;
+			productReference = 82C702F727804B2600CCA8EB /* Ege's Playground.app */;
 			productType = "com.apple.product-type.application";
 		};
 		82C702FD27804B2600CCA8EB /* Tests iOS */ = {
@@ -316,7 +316,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 82C702E827804B2400CCA8EB /* Build configuration list for PBXProject "todo-app" */;
+			buildConfigurationList = 82C702E827804B2400CCA8EB /* Build configuration list for PBXProject "Ege's Playground" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -329,8 +329,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				82C702F027804B2600CCA8EB /* todo-app (iOS) */,
-				82C702F627804B2600CCA8EB /* todo-app (macOS) */,
+				82C702F027804B2600CCA8EB /* Ege's Playground (iOS) */,
+				82C702F627804B2600CCA8EB /* Ege's Playground (macOS) */,
 				82C702FD27804B2600CCA8EB /* Tests iOS */,
 				82C7030927804B2600CCA8EB /* Tests macOS */,
 			);
@@ -434,12 +434,12 @@
 /* Begin PBXTargetDependency section */
 		82C7030027804B2600CCA8EB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 82C702F027804B2600CCA8EB /* todo-app (iOS) */;
+			target = 82C702F027804B2600CCA8EB /* Ege's Playground (iOS) */;
 			targetProxy = 82C702FF27804B2600CCA8EB /* PBXContainerItemProxy */;
 		};
 		82C7030C27804B2600CCA8EB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 82C702F627804B2600CCA8EB /* todo-app (macOS) */;
+			target = 82C702F627804B2600CCA8EB /* Ege's Playground (macOS) */;
 			targetProxy = 82C7030B27804B2600CCA8EB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -578,7 +578,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.egecavusoglu.todo-app";
-				PRODUCT_NAME = "todo-app";
+				PRODUCT_NAME = "Ege's Playground";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -608,7 +608,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.egecavusoglu.todo-app";
-				PRODUCT_NAME = "todo-app";
+				PRODUCT_NAME = "Ege's Playground";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -637,7 +637,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.egecavusoglu.todo-app";
-				PRODUCT_NAME = "todo-app";
+				PRODUCT_NAME = "Ege's Playground";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -664,7 +664,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.egecavusoglu.todo-app";
-				PRODUCT_NAME = "todo-app";
+				PRODUCT_NAME = "Ege's Playground";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -749,7 +749,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		82C702E827804B2400CCA8EB /* Build configuration list for PBXProject "todo-app" */ = {
+		82C702E827804B2400CCA8EB /* Build configuration list for PBXProject "Ege's Playground" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				82C7031827804B2600CCA8EB /* Debug */,
@@ -758,7 +758,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		82C7031A27804B2600CCA8EB /* Build configuration list for PBXNativeTarget "todo-app (iOS)" */ = {
+		82C7031A27804B2600CCA8EB /* Build configuration list for PBXNativeTarget "Ege's Playground (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				82C7031B27804B2600CCA8EB /* Debug */,
@@ -767,7 +767,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		82C7031D27804B2600CCA8EB /* Build configuration list for PBXNativeTarget "todo-app (macOS)" */ = {
+		82C7031D27804B2600CCA8EB /* Build configuration list for PBXNativeTarget "Ege's Playground (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				82C7031E27804B2600CCA8EB /* Debug */,
