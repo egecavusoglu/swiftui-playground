@@ -7,20 +7,18 @@
 
 import SwiftUI
 
-let CARDS = ["A", "B", "C", "D", "E", "F"]
-
 struct SwipeCardsContainer: View {
-    @State var cards: [String] = CARDS
+    @State var cards: [Person] = INITIAL_PEOPLE
     
-    func removeItem(text: String) ->Void {
-        cards = cards.filter{$0 != text}
+    func removeItem(id: Int) ->Void {
+        cards = cards.filter{$0.id != id}
     }
     
     
     var body: some View {
         ZStack{
             Button {
-                cards = CARDS
+                cards = INITIAL_PEOPLE
             } label: {
                 Text("Get More Cards")
             }
@@ -28,7 +26,7 @@ struct SwipeCardsContainer: View {
             ForEach(cards.reversed().indices, id: \.self) { index in
                 let ind = cards.count -  (index + 1)
                 let yOffset = ind > 3 ? 0 :CGFloat(ind * -10)
-                Card(text: cards[ind], removeSelf: removeItem)
+                Card(person: cards[ind], removeSelf: removeItem)
                     .offset(x: 0, y: yOffset)
             }
         }
