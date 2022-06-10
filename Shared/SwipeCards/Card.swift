@@ -61,8 +61,9 @@ struct Card: View {
             .background(bgColor)
             .cornerRadius(15, antialiased: true)
             .shadow(color: Color(red: 0.1, green: 0.1, blue:0.1, opacity: 0.6), radius: 10, x: 0, y: 0)
-            .offset(x: (offset.width * 2) + widthGap / 2, y: heightGap - 10)
-            .opacity(2 - Double(abs(offset.width / 110)))
+            .offset(x: widthGap / 2, y: heightGap - 10)
+            .offset(x: (offset.width * 1.4), y: 0)
+            .opacity(2 - Double(abs(offset.width / 130)))
             .rotationEffect(.degrees(Double(offset.width / 20)))
             .gesture(
                 DragGesture()
