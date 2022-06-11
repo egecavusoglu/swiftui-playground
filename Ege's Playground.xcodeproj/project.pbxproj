@@ -17,6 +17,9 @@
 		82554DD227807D4A00634ECF /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82554DD027807D4A00634ECF /* Todo.swift */; };
 		82554DD42780820300634ECF /* TodoInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82554DD32780820300634ECF /* TodoInput.swift */; };
 		82554DD52780820300634ECF /* TodoInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82554DD32780820300634ECF /* TodoInput.swift */; };
+		826C923A2854520A00FCCDD4 /* MapsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826C92392854520A00FCCDD4 /* MapsApp.swift */; };
+		826C923C28545B1D00FCCDD4 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826C923B28545B1D00FCCDD4 /* Point.swift */; };
+		826C924028545F5600FCCDD4 /* Marker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826C923F28545F5600FCCDD4 /* Marker.swift */; };
 		82849CDA284FFD890004A347 /* TodoContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82849CD9284FFD890004A347 /* TodoContainerView.swift */; };
 		82849CDB284FFD890004A347 /* TodoContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82849CD9284FFD890004A347 /* TodoContainerView.swift */; };
 		82849CDD284FFE290004A347 /* AppContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82849CDC284FFE290004A347 /* AppContainerView.swift */; };
@@ -64,6 +67,9 @@
 		82554DCD27807A5A00634ECF /* TodoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoList.swift; sourceTree = "<group>"; };
 		82554DD027807D4A00634ECF /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 		82554DD32780820300634ECF /* TodoInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoInput.swift; sourceTree = "<group>"; };
+		826C92392854520A00FCCDD4 /* MapsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsApp.swift; sourceTree = "<group>"; };
+		826C923B28545B1D00FCCDD4 /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		826C923F28545F5600FCCDD4 /* Marker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marker.swift; sourceTree = "<group>"; };
 		82849CD9284FFD890004A347 /* TodoContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoContainerView.swift; sourceTree = "<group>"; };
 		82849CDC284FFE290004A347 /* AppContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainerView.swift; sourceTree = "<group>"; };
 		82849CE0284FFFFD0004A347 /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
@@ -128,6 +134,16 @@
 			path = Todo;
 			sourceTree = "<group>";
 		};
+		826C9238285451F300FCCDD4 /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				826C92392854520A00FCCDD4 /* MapsApp.swift */,
+				826C923B28545B1D00FCCDD4 /* Point.swift */,
+				826C923F28545F5600FCCDD4 /* Marker.swift */,
+			);
+			path = Maps;
+			sourceTree = "<group>";
+		};
 		82849CDF284FFE930004A347 /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +185,7 @@
 		82C702E927804B2400CCA8EB /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				826C9238285451F300FCCDD4 /* Maps */,
 				82BEE0212851C0AD00DB3DD0 /* Utils */,
 				82849CE4285028780004A347 /* SwipeCards */,
 				82849CDF284FFE930004A347 /* Components */,
@@ -377,14 +394,17 @@
 			files = (
 				82849CE6285028910004A347 /* SwipeCardsContainer.swift in Sources */,
 				82849CDD284FFE290004A347 /* AppContainerView.swift in Sources */,
+				826C923A2854520A00FCCDD4 /* MapsApp.swift in Sources */,
 				8242798A2780C53900D03083 /* TodoItem.swift in Sources */,
 				82554DD42780820300634ECF /* TodoInput.swift in Sources */,
 				82BEE0232851C0B500DB3DD0 /* Color.swift in Sources */,
 				82849CE1284FFFFD0004A347 /* ListItem.swift in Sources */,
 				82554DCB278077E200634ECF /* Title.swift in Sources */,
 				82BEE01F2851ADEE00DB3DD0 /* Person.swift in Sources */,
+				826C924028545F5600FCCDD4 /* Marker.swift in Sources */,
 				82C7031227804B2600CCA8EB /* PlaygroundApp.swift in Sources */,
 				82554DCE27807A5A00634ECF /* TodoList.swift in Sources */,
+				826C923C28545B1D00FCCDD4 /* Point.swift in Sources */,
 				82849CDA284FFD890004A347 /* TodoContainerView.swift in Sources */,
 				82554DD127807D4A00634ECF /* Todo.swift in Sources */,
 				82849CE928502A210004A347 /* Card.swift in Sources */,
