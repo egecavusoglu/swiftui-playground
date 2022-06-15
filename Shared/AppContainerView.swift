@@ -16,6 +16,7 @@ struct AppContainerView: View {
                     ListItem(text: "Todo App", screen: AnyView(TodoContainerView()))
                     ListItem(text: "Swipe Cards", screen: AnyView(SwipeCardsContainer()))
                     ListItem(text: "Maps", screen: AnyView(MapsApp()))
+                    ListItem(text: "Details Page", screen: AnyView(DetailsPage()))
                 }
             }
             .navigationTitle(Text("Ege's Playground"))

@@ -42,6 +42,8 @@
 		82C7031327804B2600CCA8EB /* PlaygroundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C702EA27804B2400CCA8EB /* PlaygroundApp.swift */; };
 		82C7031627804B2600CCA8EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82C702EC27804B2500CCA8EB /* Assets.xcassets */; };
 		82C7031727804B2600CCA8EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82C702EC27804B2500CCA8EB /* Assets.xcassets */; };
+		82F8B0922859A662006CF25D /* DetailsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F8B0912859A662006CF25D /* DetailsPage.swift */; };
+		82F8B0942859B13E006CF25D /* Clamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F8B0932859B13E006CF25D /* Clamp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +90,8 @@
 		82C7030A27804B2600CCA8EB /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		82C7030E27804B2600CCA8EB /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		82C7031027804B2600CCA8EB /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		82F8B0912859A662006CF25D /* DetailsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPage.swift; sourceTree = "<group>"; };
+		82F8B0932859B13E006CF25D /* Clamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clamp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				82BEE0222851C0B500DB3DD0 /* Color.swift */,
+				82F8B0932859B13E006CF25D /* Clamp.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -185,6 +190,7 @@
 		82C702E927804B2400CCA8EB /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				82F8B0902859A523006CF25D /* DetailsPage */,
 				826C9238285451F300FCCDD4 /* Maps */,
 				82BEE0212851C0AD00DB3DD0 /* Utils */,
 				82849CE4285028780004A347 /* SwipeCards */,
@@ -232,6 +238,14 @@
 				82C7031027804B2600CCA8EB /* Tests_macOSLaunchTests.swift */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		82F8B0902859A523006CF25D /* DetailsPage */ = {
+			isa = PBXGroup;
+			children = (
+				82F8B0912859A662006CF25D /* DetailsPage.swift */,
+			);
+			path = DetailsPage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -393,6 +407,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				82849CE6285028910004A347 /* SwipeCardsContainer.swift in Sources */,
+				82F8B0942859B13E006CF25D /* Clamp.swift in Sources */,
 				82849CDD284FFE290004A347 /* AppContainerView.swift in Sources */,
 				826C923A2854520A00FCCDD4 /* MapsApp.swift in Sources */,
 				8242798A2780C53900D03083 /* TodoItem.swift in Sources */,
@@ -406,6 +421,7 @@
 				82554DCE27807A5A00634ECF /* TodoList.swift in Sources */,
 				826C923C28545B1D00FCCDD4 /* Point.swift in Sources */,
 				82849CDA284FFD890004A347 /* TodoContainerView.swift in Sources */,
+				82F8B0922859A662006CF25D /* DetailsPage.swift in Sources */,
 				82554DD127807D4A00634ECF /* Todo.swift in Sources */,
 				82849CE928502A210004A347 /* Card.swift in Sources */,
 			);

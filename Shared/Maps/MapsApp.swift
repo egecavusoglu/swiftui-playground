@@ -19,7 +19,8 @@ struct MapsApp: View {
             }
             
         }
-        .ignoresSafeArea()
+        .navigationTitle("Maps")
+        .ignoresSafeArea(.all, edges: .bottom)
     }
 }
 
