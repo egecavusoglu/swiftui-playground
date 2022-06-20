@@ -10,7 +10,11 @@ import SwiftUI
 struct DetailsPage: View {
     let screen_width = UIScreen.main.bounds.width
     let screen_height = UIScreen.main.bounds.height
-    @State private var scrollOffset = CGFloat.zero
+    @State var offset: CGPoint = .zero
+    
+    var scrollOffset: CGFloat {
+        return offset.y
+    }
     
     var image_height: CGFloat {
         let initialHeight = screen_height / 2.5
@@ -36,58 +40,38 @@ struct DetailsPage: View {
     
     var body: some View {
         VStack {
-            
             ScrollView {
+                
                 VStack {
-                    Image("nature")
-                        .resizable()
-                        .scaleEffect(imageScale, anchor: .bottom)
-                }
-                .frame(width: screen_width, height: image_height, alignment: .top)
-                .background(.indigo)
-                
-                HStack {
-                    Text(title)
-                        .font(.largeTitle)
-                        .bold()
-                    Spacer()
-                }
-                .padding()
-                
-                Spacer()
-                
-                ForEach (0...30, id: \.self) { index in
                     VStack {
-                        Text("Box \(index)")
+                        Image("nature")
+                            .resizable()
+                            .scaleEffect(imageScale, anchor: .bottom)
                     }
-                    .frame(width: screen_width - 10, height: 50, alignment: .center)
-                    .background(.cyan)
-                        
-                        
-                        
+                    .frame(width: screen_width, height: image_height, alignment: .top)
+                    .background(.indigo)
                     
-                }
-                    .background(GeometryReader {
-                        Color.clear.preference(key: ViewOffsetKey.self,
-                                               value: -$0.frame(in: .named("scroll")).origin.y)
-                    })
-                    .onPreferenceChange(ViewOffsetKey.self) { offset in
-                        scrollOffset = offset + 447.4
-                        print(scrollOffset)
+                    HStack {
+                        Text(title)
+                            .font(.largeTitle)
+                            .bold()
+                        Spacer()
                     }
+                    .padding()
+                    
+                    Spacer()
+                    
+                    ForEach (0...27, id: \.self) { index in
+                        VStack {
+                            Text("Box \(index)")
+                        }
+                        .frame(width: screen_width - 10, height: 50, alignment: .center)
+                        .background(.cyan)       
+                    }
+                }
+                .readingScrollView(from: "scroll", into: $offset)
             }
-            .coordinateSpace(name: "scroll")
         }
         .ignoresSafeArea()
-//        .navigationBarTitleDisplayMode(.inline)
-        
-    }
-}
-
-struct ViewOffsetKey: PreferenceKey {
-    typealias Value = CGFloat
-    static var defaultValue = CGFloat.zero
-    static func reduce(value: inout Value, nextValue: () -> Value) {
-        value += nextValue()
     }
 }
