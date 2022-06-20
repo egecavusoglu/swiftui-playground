@@ -12,7 +12,7 @@ struct PlaygroundApp: App {
     var body: some Scene {
         WindowGroup {
             AppContainerView()
-//            MapsApp()
+//            DetailsPage()
         }
     }
 }

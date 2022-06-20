@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct DetailsPage: View {
+    var park: NationalPark = JOSHUA_TREE_PARK
     let screen_width = UIScreen.main.bounds.width
     let screen_height = UIScreen.main.bounds.height
     @State var offset: CGPoint = .zero
@@ -20,8 +21,6 @@ struct DetailsPage: View {
         let initialHeight = screen_height / 2.5
         return initialHeight
     }
-    
-    let title = "Joshua Tree Park"
     
     
     var imageScale: CGFloat {
@@ -50,28 +49,52 @@ struct DetailsPage: View {
                     }
                     .frame(width: screen_width, height: image_height, alignment: .top)
                     .background(.indigo)
-                    
-                    HStack {
-                        Text(title)
-                            .font(.largeTitle)
-                            .bold()
-                        Spacer()
+                    VStack {
+                        HStack {
+                            Text(park.title)
+                                .font(.largeTitle)
+                                .bold()
+                            Spacer()
+                        }
+                        Text(park.description)
+                            
+                        HStack {
+                            Text("Trails")
+                                .font(.title2)
+                                .bold()
+                            Spacer()
+                        }
+                        .padding(.top)
+                        
+                        
+                        
+                        ForEach (0...27, id: \.self) { index in
+                            HStack{
+                                Text("Trail \(index)")
+                                Spacer()
+                            }
+                            .padding()
+                            .frame(width: screen_width - 25, height: 50, alignment: .center)
+                            .background(.white)
+                            .cornerRadius(10, antialiased: false)
+                            .shadow(radius: 2)
+                            
+                            
+                        }
                     }
                     .padding()
-                    
-                    Spacer()
-                    
-                    ForEach (0...27, id: \.self) { index in
-                        VStack {
-                            Text("Box \(index)")
-                        }
-                        .frame(width: screen_width - 10, height: 50, alignment: .center)
-                        .background(.cyan)       
-                    }
                 }
                 .readingScrollView(from: "scroll", into: $offset)
             }
         }
         .ignoresSafeArea()
+        .navigationTitle(scrollOffset > image_height ? park.title : "")
+        .navigationBarTitleDisplayMode(.inline)
+    }
+}
+
+struct DetailsPage_Previes: PreviewProvider {
+    static var previews: some View {
+        DetailsPage(park: JOSHUA_TREE_PARK)
     }
 }

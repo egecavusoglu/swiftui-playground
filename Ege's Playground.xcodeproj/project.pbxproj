@@ -45,6 +45,7 @@
 		82F8B0922859A662006CF25D /* DetailsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F8B0912859A662006CF25D /* DetailsPage.swift */; };
 		82F8B0942859B13E006CF25D /* Clamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F8B0932859B13E006CF25D /* Clamp.swift */; };
 		82FBE75228611993002019F7 /* ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FBE75128611993002019F7 /* ScrollView.swift */; };
+		82FBE754286122DB002019F7 /* NationalPark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FBE753286122DB002019F7 /* NationalPark.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,7 @@
 		82F8B0912859A662006CF25D /* DetailsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPage.swift; sourceTree = "<group>"; };
 		82F8B0932859B13E006CF25D /* Clamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clamp.swift; sourceTree = "<group>"; };
 		82FBE75128611993002019F7 /* ScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollView.swift; sourceTree = "<group>"; };
+		82FBE753286122DB002019F7 /* NationalPark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalPark.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,6 +249,7 @@
 			isa = PBXGroup;
 			children = (
 				82F8B0912859A662006CF25D /* DetailsPage.swift */,
+				82FBE753286122DB002019F7 /* NationalPark.swift */,
 			);
 			path = DetailsPage;
 			sourceTree = "<group>";
@@ -414,6 +417,7 @@
 				82F8B0942859B13E006CF25D /* Clamp.swift in Sources */,
 				82849CDD284FFE290004A347 /* AppContainerView.swift in Sources */,
 				826C923A2854520A00FCCDD4 /* MapsApp.swift in Sources */,
+				82FBE754286122DB002019F7 /* NationalPark.swift in Sources */,
 				8242798A2780C53900D03083 /* TodoItem.swift in Sources */,
 				82554DD42780820300634ECF /* TodoInput.swift in Sources */,
 				82BEE0232851C0B500DB3DD0 /* Color.swift in Sources */,
