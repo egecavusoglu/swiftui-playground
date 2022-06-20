@@ -22,7 +22,7 @@ struct DetailsPage: View {
     
     var imageScale: CGFloat {
         if (scrollOffset < 0) {
-            return (-scrollOffset / 300) + 1
+            return (-scrollOffset / 200) + 1
         }
         return 1
     }
@@ -36,16 +36,15 @@ struct DetailsPage: View {
     
     var body: some View {
         VStack {
-            VStack {
-                Image("nature")
-                    .resizable()
-                    .scaleEffect(imageScale)
-            }
-            .frame(width: screen_width, height: image_height, alignment: .top)
-            .background(.indigo)
-            .clipped()
-            .border(.cyan, width: 3)
+            
             ScrollView {
+                VStack {
+                    Image("nature")
+                        .resizable()
+                        .scaleEffect(imageScale, anchor: .bottom)
+                }
+                .frame(width: screen_width, height: image_height, alignment: .top)
+                .background(.indigo)
                 
                 HStack {
                     Text(title)
@@ -54,22 +53,33 @@ struct DetailsPage: View {
                     Spacer()
                 }
                 .padding()
+                
                 Spacer()
+                
+                ForEach (0...30, id: \.self) { index in
+                    VStack {
+                        Text("Box \(index)")
+                    }
+                    .frame(width: screen_width - 10, height: 50, alignment: .center)
+                    .background(.cyan)
+                        
+                        
+                        
+                    
+                }
                     .background(GeometryReader {
                         Color.clear.preference(key: ViewOffsetKey.self,
                                                value: -$0.frame(in: .named("scroll")).origin.y)
                     })
                     .onPreferenceChange(ViewOffsetKey.self) { offset in
-                        scrollOffset = offset + 73
+                        scrollOffset = offset + 447.4
                         print(scrollOffset)
                     }
             }
             .coordinateSpace(name: "scroll")
-            .border(.red, width: 2)
         }
         .ignoresSafeArea()
-        .navigationTitle("")
-        .navigationBarTitleDisplayMode(.inline)
+//        .navigationBarTitleDisplayMode(.inline)
         
     }
 }
