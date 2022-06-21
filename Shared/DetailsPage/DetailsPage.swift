@@ -75,9 +75,10 @@ struct DetailsPage: View {
                             }
                             .padding()
                             .frame(width: screen_width - 25, height: 50, alignment: .center)
-                            .background(.white)
-                            .cornerRadius(10, antialiased: false)
-                            .shadow(radius: 2)
+                            .overlay(
+                                        RoundedRectangle(cornerRadius: 10)
+                                            .stroke(.gray, lineWidth: 1)
+                                    )
                             
                             
                         }
