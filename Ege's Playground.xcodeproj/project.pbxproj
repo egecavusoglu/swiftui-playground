@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8200A52F2A1C6D400065AA2F /* Swease in Frameworks */ = {isa = PBXBuildFile; productRef = 8200A52E2A1C6D400065AA2F /* Swease */; };
+		8200A5312A1C6DD10065AA2F /* Spark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8200A5302A1C6DD10065AA2F /* Spark.swift */; };
+		8200A5332A1C6DF20065AA2F /* SparkCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8200A5322A1C6DF20065AA2F /* SparkCanvas.swift */; };
+		8200A53B2A1C778E0065AA2F /* MagicParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8200A53A2A1C778E0065AA2F /* MagicParticle.sks */; };
 		8242798A2780C53900D03083 /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824279892780C53900D03083 /* TodoItem.swift */; };
 		8242798B2780C53900D03083 /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824279892780C53900D03083 /* TodoItem.swift */; };
 		82554DCB278077E200634ECF /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82554DCA278077E200634ECF /* Title.swift */; };
@@ -66,6 +70,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8200A5302A1C6DD10065AA2F /* Spark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spark.swift; sourceTree = "<group>"; };
+		8200A5322A1C6DF20065AA2F /* SparkCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparkCanvas.swift; sourceTree = "<group>"; };
+		8200A53A2A1C778E0065AA2F /* MagicParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MagicParticle.sks; sourceTree = "<group>"; };
 		824279892780C53900D03083 /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
 		82554DCA278077E200634ECF /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
 		82554DCD27807A5A00634ECF /* TodoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoList.swift; sourceTree = "<group>"; };
@@ -103,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8200A52F2A1C6D400065AA2F /* Swease in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +138,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		823E3BA028625EA900933D6E /* Spark */ = {
+			isa = PBXGroup;
+			children = (
+				8200A5302A1C6DD10065AA2F /* Spark.swift */,
+				8200A5322A1C6DF20065AA2F /* SparkCanvas.swift */,
+				8200A53A2A1C778E0065AA2F /* MagicParticle.sks */,
+			);
+			path = Spark;
+			sourceTree = "<group>";
+		};
 		8242798C2780C5A600D03083 /* Todo */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +213,7 @@
 		82C702E927804B2400CCA8EB /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				823E3BA028625EA900933D6E /* Spark */,
 				82F8B0902859A523006CF25D /* DetailsPage */,
 				826C9238285451F300FCCDD4 /* Maps */,
 				82BEE0212851C0AD00DB3DD0 /* Utils */,
@@ -202,8 +221,8 @@
 				82849CDF284FFE930004A347 /* Components */,
 				8242798C2780C5A600D03083 /* Todo */,
 				82C702EA27804B2400CCA8EB /* PlaygroundApp.swift */,
-				82C702EC27804B2500CCA8EB /* Assets.xcassets */,
 				82849CDC284FFE290004A347 /* AppContainerView.swift */,
+				82C702EC27804B2500CCA8EB /* Assets.xcassets */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -270,6 +289,9 @@
 			dependencies = (
 			);
 			name = "Ege's Playground (iOS)";
+			packageProductDependencies = (
+				8200A52E2A1C6D400065AA2F /* Swease */,
+			);
 			productName = "todo-app (iOS)";
 			productReference = 82C702F127804B2600CCA8EB /* Ege's Playground.app */;
 			productType = "com.apple.product-type.application";
@@ -362,6 +384,9 @@
 				Base,
 			);
 			mainGroup = 82C702E427804B2400CCA8EB;
+			packageReferences = (
+				8200A52D2A1C6D400065AA2F /* XCRemoteSwiftPackageReference "swease" */,
+			);
 			productRefGroup = 82C702F227804B2600CCA8EB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -380,6 +405,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				82C7031627804B2600CCA8EB /* Assets.xcassets in Resources */,
+				8200A53B2A1C778E0065AA2F /* MagicParticle.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,11 +441,13 @@
 				82849CE6285028910004A347 /* SwipeCardsContainer.swift in Sources */,
 				82FBE75228611993002019F7 /* ScrollView.swift in Sources */,
 				82F8B0942859B13E006CF25D /* Clamp.swift in Sources */,
+				8200A5312A1C6DD10065AA2F /* Spark.swift in Sources */,
 				82849CDD284FFE290004A347 /* AppContainerView.swift in Sources */,
 				826C923A2854520A00FCCDD4 /* MapsApp.swift in Sources */,
 				82FBE754286122DB002019F7 /* NationalPark.swift in Sources */,
 				8242798A2780C53900D03083 /* TodoItem.swift in Sources */,
 				82554DD42780820300634ECF /* TodoInput.swift in Sources */,
+				8200A5332A1C6DF20065AA2F /* SparkCanvas.swift in Sources */,
 				82BEE0232851C0B500DB3DD0 /* Color.swift in Sources */,
 				82849CE1284FFFFD0004A347 /* ListItem.swift in Sources */,
 				82554DCB278077E200634ECF /* Title.swift in Sources */,
@@ -839,6 +867,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8200A52D2A1C6D400065AA2F /* XCRemoteSwiftPackageReference "swease" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/egecavusoglu/swease";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8200A52E2A1C6D400065AA2F /* Swease */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8200A52D2A1C6D400065AA2F /* XCRemoteSwiftPackageReference "swease" */;
+			productName = Swease;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 82C702E527804B2400CCA8EB /* Project object */;
 }

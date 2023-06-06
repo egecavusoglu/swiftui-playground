@@ -6,41 +6,39 @@
 //
 
 import SwiftUI
+import Swease
 
 struct DetailsPage: View {
     var park: NationalPark = JOSHUA_TREE_PARK
     let screen_width = UIScreen.main.bounds.width
     let screen_height = UIScreen.main.bounds.height
     @State var offset: CGPoint = .zero
-    
-    var scrollOffset: CGFloat {
-        return offset.y
-    }
-    
+
     var image_height: CGFloat {
         let initialHeight = screen_height / 2.5
         return initialHeight
     }
-    
-    
+
+    var scrollOffset: CGFloat {
+        return offset.y
+    }
+
+    let easer = Swease(inputRange: 0 ... 200, outputRange: 1...2)
     var imageScale: CGFloat {
-        if (scrollOffset < 0) {
-            return (-scrollOffset / 200) + 1
+        if scrollOffset > 0 {
+            return 1
         }
-        return 1
+        let absoluteValueOffset = abs(scrollOffset)
+        let scale = easer.map(value: absoluteValueOffset, easing: .linear)
+        print("mapping \(absoluteValueOffset) -> \(scale)")
+        return scale
     }
     
-    var scrollview_y_position: CGFloat {
-        if (scrollOffset <= 0) {
-            return 0
-        }
-        return -scrollOffset
-    }
+
     
     var body: some View {
         VStack {
             ScrollView {
-                
                 VStack {
                     VStack {
                         Image("nature")
@@ -57,7 +55,7 @@ struct DetailsPage: View {
                             Spacer()
                         }
                         Text(park.description)
-                            
+                        
                         HStack {
                             Text("Trails")
                                 .font(.title2)
@@ -65,9 +63,6 @@ struct DetailsPage: View {
                             Spacer()
                         }
                         .padding(.top)
-                        
-                        
-                        
                         ForEach (0...27, id: \.self) { index in
                             HStack{
                                 Text("Trail \(index)")
@@ -76,11 +71,9 @@ struct DetailsPage: View {
                             .padding()
                             .frame(width: screen_width - 25, height: 50, alignment: .center)
                             .overlay(
-                                        RoundedRectangle(cornerRadius: 10)
-                                            .stroke(.gray, lineWidth: 1)
-                                    )
-                            
-                            
+                                RoundedRectangle(cornerRadius: 10)
+                                    .stroke(.gray, lineWidth: 1)
+                            )
                         }
                     }
                     .padding()
